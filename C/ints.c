@@ -11,4 +11,5 @@ int main(void)
     printf("x - y = %i\n", x - y);
     printf("x * y = %i\n", x * y);
     printf("x / y = %i\n", x / y);
+    printf("x mod y = %i\n", x % y);
 }

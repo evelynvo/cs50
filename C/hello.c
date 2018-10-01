@@ -7,3 +7,5 @@ int main(void){
 	printf("\nHello, World!\n");
 	int i = get_int("What's your age?");
 }
+
+//just a line of comments
