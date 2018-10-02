@@ -1,20 +1,19 @@
 #include <cs50.h>
 #include <stdio.h>
 
-void chart(int count, int scores[])
+void chart(int count, int scores[]);
 
 const int COUNT = 3;
 
 int main(void)
 {
-    int scores[3] = [100, 75, 50];
+    int scores[COUNT];
     
     for(int i = 0; i < COUNT; i++)
     {
-        chart(COUNT, scores[]);
+        scores[i] = get_int("Score %i: ", i + 1);
     }
-    
-    
+    chart(COUNT, scores);
 }
 
 void chart(int count, int scores[]){
