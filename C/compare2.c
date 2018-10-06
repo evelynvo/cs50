@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 
+bool compare_strings(string a, string b);
+
 int main(void)
 {
     string s = get_string("s: ");
