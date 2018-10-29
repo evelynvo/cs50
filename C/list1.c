@@ -14,6 +14,8 @@ int main(void)
         int number = get_int("Number: ");
 
         if (number == INT_MAX) 
+            /* should type Ctrl+D 
+            in order to send EOF input */
         {   
             printf("\n");
             break;
