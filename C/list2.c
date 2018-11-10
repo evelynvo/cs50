@@ -6,7 +6,7 @@
 typedef 
 struct node
 {
-    
+    // содержит число и указатель на следующее число
     int number;
     struct node *next;
 
@@ -37,10 +37,9 @@ int main(void)
         }
         
         // Add number to the list
-        n->number = number;
+        n->number = number; // Arrow notation equal to (*n).number = number
         n->next = NULL;
 
-        
         if (numbers) {
             
             for(node *ptr = numbers; ptr != NULL; ptr = ptr->next)
