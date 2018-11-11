@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
 
@@ -10,7 +10,7 @@ students = []
 
 @app.route("/registrants")
 def registrants():
-    return render_template("registred.html", students=students)
+    return render_template("registered.html", students=students)
 
 @app.route("/register", methods=["POST"])
 def register():
@@ -22,4 +22,4 @@ def register():
     
     students.append(f"{name} from {dorm}")
 
-    return render_template("/registrants")
+    return redirect("/registrants")
