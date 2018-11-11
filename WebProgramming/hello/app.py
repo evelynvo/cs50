@@ -4,5 +4,14 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
+    return render_template("index.html")
+
+@app.route("/register", methods=["POST"])
+def register():
     name = request.args.get("name")
-    return render_template("index.html", name=name)
+    dorm = request.args.get("dorm")
+
+    if not name or not dorm:
+        return "failure"
+    
+    return render_template("success.html")

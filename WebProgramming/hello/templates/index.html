@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Hello, World!</title>
+<title>froshim0</title>
 </head>
 <body>
-<h1>Hello, {{ name }}</h1>
+<h1>Register for FroshIMs</h1>
+
+<form action="/register" method="POST">
+    <input type="text" placeholder="Name" name="name" >
+    <select name="dorm" >
+<option selected value="Dorm" disabled>Dorm</option>
+        <option value="Apley Court">Apley Court</option>
+        <option value="Canaday">Canaday</option>
+    </select>
+    <input type="submit" value="Submit">
+</form>
 
 </body>
 </html>
