@@ -30,6 +30,6 @@ def register():
     messaage = "You are registered!"
     server = smtplib.SMTP("smtp.gmail.com", 587)
     server.starttls()
-    server.login("yourihdx@gmail.com", os.getenv("PASSWORD"))
+    server.login("yourihdx", os.getenv("blablabla*"))
     server.sendmail("yourihdx@gmail.com", email, message)
     return render_template("success.html")
